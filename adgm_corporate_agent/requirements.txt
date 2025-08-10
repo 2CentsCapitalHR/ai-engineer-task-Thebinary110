@@ -1,0 +1,44 @@
+# ADGM Corporate Agent - Streamlit Version (Windows Compatible)
+
+# Web Interface (Windows Compatible - NO aiofiles dependency!)
+streamlit==1.28.1
+
+# OpenAI Integration
+openai==1.35.15
+tiktoken==0.7.0
+
+# Document Processing
+python-docx==1.1.2
+mammoth==1.6.0
+
+# RAG and Vector Database
+langchain==0.2.12
+langchain-openai==0.1.19
+langchain-community==0.2.10
+chromadb==0.5.5
+sentence-transformers==3.0.1
+
+# Data Processing and Analytics
+pandas==2.2.2
+numpy==1.26.4
+
+# Utilities
+python-dotenv==1.0.1
+pydantic==2.8.2
+tqdm==4.66.4
+
+# File and Data Handling
+pathlib2==2.3.7.post1
+
+# Network and API
+requests==2.32.3
+beautifulsoup4==4.12.3
+
+# Caching and Storage
+diskcache==5.6.3
+
+# Security
+cryptography==43.0.0
+
+# Additional utilities for async operations
+asyncio-throttle==1.0.2

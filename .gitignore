@@ -1,0 +1,474 @@
+# 🏛️ ADGM Corporate Agent - .gitignore
+
+# =======================
+# SECURITY & SECRETS
+# =======================
+.env
+.env.local
+.env.production
+.env.staging
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
+config/secrets.json
+openai_api_key.txt
+
+# =======================
+# PYTHON
+# =======================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+.env/
+env.bak/
+venv.bak/
+adgm_env/
+adgm_venv/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# =======================
+# STREAMLIT
+# =======================
+.streamlit/
+streamlit_cache/
+*.streamlit
+
+# =======================
+# AI/ML & VECTOR DATABASES
+# =======================
+# ChromaDB
+chroma_db/
+chromadb/
+*.chroma
+chroma-collections.parquet
+chroma-embeddings.parquet
+
+# OpenAI Cache
+openai_cache/
+.openai_cache
+
+# Hugging Face
+.cache/huggingface/
+transformers_cache/
+
+# Model files
+*.bin
+*.safetensors
+*.onnx
+*.pb
+models/
+checkpoints/
+
+# Vector stores
+faiss_index/
+pinecone_cache/
+embeddings/
+vectors/
+
+# =======================
+# DOCUMENT PROCESSING
+# =======================
+# Temporary document files
+temp_docs/
+temp_uploads/
+processing/
+document_cache/
+
+# Document outputs
+outputs/
+reviewed_documents/
+analysis_reports/
+modified_docs/
+
+# Large test files
+test_documents/large/
+sample_docs/
+real_adgm_documents/
+downloaded_templates/
+
+# Office temporary files
+~$*.docx
+~$*.doc
+~$*.pptx
+~$*.xlsx
+*.tmp
+
+# =======================
+# LOGGING & MONITORING
+# =======================
+logs/
+*.log
+log/
+log.txt
+error.log
+debug.log
+access.log
+application.log
+
+# Performance monitoring
+profiling/
+*.prof
+.profiling
+
+# =======================
+# CACHING
+# =======================
+cache/
+.cache/
+cached_responses/
+disk_cache/
+memory_cache/
+redis_cache/
+
+# Diskcache
+*.db
+*.sqlite
+*.sqlite3
+
+# =======================
+# OPERATING SYSTEM
+# =======================
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =======================
+# IDEs & EDITORS
+# =======================
+# VS Code
+.vscode/
+.history/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# =======================
+# DEVELOPMENT & BUILD
+# =======================
+# Node.js (if using any JS tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Webpack
+webpack-stats.json
+
+# Parcel
+.parcel-cache/
+
+# =======================
+# DATA & DATABASES
+# =======================
+# SQLite
+*.sqlite
+*.sqlite3
+*.db
+
+# CSV data files
+data/raw/
+data/processed/
+*.csv.bak
+
+# Pickle files
+*.pkl
+*.pickle
+
+# HDF5
+*.h5
+*.hdf5
+
+# =======================
+# TEMPORARY FILES
+# =======================
+# General temp
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+
+# Backup files
+*~
+*.bak
+*.backup
+*.swp
+*.tmp
+*backup*
+
+# =======================
+# CONFIGURATION
+# =======================
+# Local config overrides
+config.local.json
+settings.local.json
+local_settings.py
+development.ini
+production.ini
+
+# =======================
+# DEPLOYMENT
+# =======================
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Kubernetes
+*.yaml.local
+*.yml.local
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# =======================
+# DOCUMENTATION
+# =======================
+# Compiled docs
+docs/_build/
+docs/build/
+
+# Sphinx
+docs/_build
+docs/_static
+docs/_templates
+
+# =======================
+# TESTING
+# =======================
+# Test artifacts
+test_outputs/
+test_results/
+test_reports/
+
+# Coverage
+htmlcov/
+.coverage
+coverage.xml
+
+# =======================
+# MEDIA FILES (Large)
+# =======================
+# Images
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.ico
+
+# Videos
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+
+# Audio
+*.mp3
+*.wav
+*.flac
+*.aac
+
+# =======================
+# ARCHIVES
+# =======================
+*.zip
+*.tar.gz
+*.tar.bz2
+*.rar
+*.7z
+
+# =======================
+# PROJECT SPECIFIC
+# =======================
+# ADGM specific
+adgm_templates_backup/
+original_templates/
+client_documents/
+submission_backup/
+
+# Personal notes
+NOTES.md
+TODO.md
+SCRATCH.md
+personal/
+
+# Performance benchmarks
+benchmarks/
+performance_tests/
+
+# =======================
+# STREAMLIT SPECIFIC
+# =======================
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Streamlit cache
+.streamlit/cache/
+
+# =======================
+# END
+# =======================

@@ -1,0 +1,40 @@
+{
+  "system": {
+    "name": "ADGM Corporate Agent",
+    "version": "1.0.0",
+    "max_file_size_mb": 10,
+    "supported_formats": [
+      ".docx"
+    ],
+    "max_concurrent_processing": 3
+  },
+  "rag": {
+    "chunk_size": 1000,
+    "chunk_overlap": 200,
+    "similarity_threshold": 0.7,
+    "max_retrieval_docs": 5
+  },
+  "agents": {
+    "classifier": {
+      "confidence_threshold": 0.8,
+      "supported_doc_types": [
+        "Articles of Association",
+        "Memorandum of Association",
+        "Board Resolution",
+        "Shareholder Resolution",
+        "Incorporation Application",
+        "UBO Declaration",
+        "Register of Members"
+      ]
+    },
+    "compliance": {
+      "severity_levels": [
+        "Low",
+        "Medium",
+        "High",
+        "Critical"
+      ],
+      "auto_fix_threshold": 0.9
+    }
+  }
+}
